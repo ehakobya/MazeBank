@@ -1,0 +1,55 @@
+.accounts-view-container {
+    -fx-background-color: #EEEEEE;
+}
+
+.accounts-view-container Text {
+    -fx-fill: #888888;
+    -fx-font-size: 1.4em;
+    -fx-font-family: "Calibri Light";
+}
+
+.accounts-view-container .account-vbox {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #888888;
+    -fx-padding: 10;
+    -fx-spacing: 15;
+}
+
+.accounts-view-container .account-vbox Text {
+    -fx-font-size: 1.2em;
+}
+
+.accounts-view-container .account-vbox Label {
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+}
+
+.accounts-view-container .move-funds {
+    -fx-alignment: top_center;
+    -fx-spacing: 15;
+}
+
+.accounts-view-container .move-funds TextField {
+    -fx-border-width: 250;
+    -fx-pref-height: 35;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+.accounts-view-container .move-funds Button {
+    -fx-background-color: linear-gradient(to right, #132A13, #253F25);
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+    -fx-pref-width: 250;
+    -fx-pref-height: 35;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Calibri";
+    -fx-text-fill: #FFFFFF;
+}
+
+.accounts-view-container .move-funds Button:hover {
+    -fx-cursor: hand;
+}
+
+.accounts-view-container .move-funds FontAwesomeIconView {
+    -fx-fill: #FFFFFF;
+}
