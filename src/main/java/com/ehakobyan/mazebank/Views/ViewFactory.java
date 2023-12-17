@@ -1,18 +1,27 @@
 package com.ehakobyan.mazebank.Views;
 
 import com.ehakobyan.mazebank.Controllers.Client.ClientController;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class ViewFactory {
-    
     // Client Views
+    private final StringProperty clientSelectedMenuItem;
+
     private AnchorPane dashboardView;
     private AnchorPane transactionsView;
 
-    public ViewFactory() {}
+    public ViewFactory() {
+        this.clientSelectedMenuItem = new SimpleStringProperty("");
+    }
+
+    public StringProperty getClientSelectedMenuItem() {
+        return clientSelectedMenuItem;
+    }
 
     public AnchorPane getDashboardView() {
         if (dashboardView == null) {
